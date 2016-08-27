@@ -403,6 +403,95 @@ p.progress-indicator{
     background-image: none !important;
 }
 
+.bar input {
+    background-color: transparent;
+}
+
+.wrap-him {
+    position: relative;
+    padding: 10px 0;
+}
+
+.pic-him {
+    background-image: url("../img/tutor.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+}
+
+.message-him {
+    padding: 10px;
+    padding-left: 15px;
+    width: 50%;
+    border-radius: 15px;
+    background-color: #23d9d1;
+    margin-left: 50px;
+    color: #222;
+    position:relative;
+    line-height: 1.5;
+}
+
+.message-him:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: auto;
+    left: -10px;
+    bottom: 10px;
+    top: auto;
+    border: 10px solid;
+    border-color: transparent transparent #23d9d1 transparent;
+}
+
+.wrap-me {
+    position: relative;
+    padding: 10px 0;
+}
+
+.message-me {
+    padding: 10px;
+    padding-left: 15px;
+    width: 50%;
+    border-radius: 15px;
+    background-color: #DDD;
+    margin-right: 50px;
+    color: #222;
+    position:relative;
+    float: right;
+}
+
+.message-me:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -10px;
+    bottom: 12px;
+    top: auto;
+    border: 10px solid;
+    border-color: transparent transparent #DDD transparent;
+}
+
+.pic-me {
+    background-color: red;
+    background-image: url("../img/leo.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
 
 /*.cnt-red section.horizontal-sec p.sec-title, 
 .cnt-red section.main-sec .sec-title, 

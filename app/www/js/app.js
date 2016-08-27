@@ -95,28 +95,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
         color: "blue"
     });
 
-    $stateProvider.state('app.exers', {
-        url: '/exers',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/exers.html',
-                controller: 'ExersCtrl'
-            }
-        },
-        color: "red"
-    });
-
-    $stateProvider.state('app.exers-detail', {
-        url: '/exers-detail',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/exers-detail.html',
-                controller: 'ExersDetailCtrl'
-            }
-        },
-        color: "red"
-    });
-
     $stateProvider.state('app.forum', {
         url: '/forum',
         views: {
@@ -144,12 +122,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
         views: {
             'menuContent': {
                 templateUrl: 'templates/community.html',
-                controller: 'PlaylistsCtrl'
+                controller: 'ChatCtrl'
             }
         },
         color: "cyan"
     });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/exers');
+    $urlRouterProvider.otherwise('/app/community');
 });

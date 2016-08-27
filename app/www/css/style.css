@@ -136,7 +136,7 @@ ion-side-menu ion-item.header-item .img-wrap{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/bambam.jpg);
+    background-image: url(../img/leo.jpg);
 }
 
 ion-side-menu ion-item.header-item p{
@@ -396,6 +396,12 @@ p.progress-indicator{
     font-size: 14px;
 }
 
+
+
+.bar.bar-stable {
+    background-color: white !important;
+    background-image: none !important;
+}
 
 
 /*.cnt-red section.horizontal-sec p.sec-title, 

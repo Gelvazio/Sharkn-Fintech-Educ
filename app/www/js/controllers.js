@@ -52,20 +52,8 @@ app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
     };
 })
 
-app.controller('ExersCtrl', function($scope, $state) {
-    $scope.seeDetail = function() {
-        $state.go("app.exers-detail");
-    }
-})
+app.controller("ChatCtrl", function($scope){
 
-app.controller('ExersDetailCtrl', function($scope) {
-    $scope.linedata = [
-        [35, 76, 90, 44, 60, 75, 90],
-    ];
-    $scope.linecolor = ['#D32F2F'];
-    $scope.linelabels = ["Jan", "Feb", "Mar", "Apr"];
-
-    $scope.chartwidth = 500;
-})
+});
 
 app.controller('PlaylistCtrl', function($scope, $stateParams) {});

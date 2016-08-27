@@ -407,6 +407,19 @@ p.progress-indicator{
     background-color: transparent;
 }
 
+.date {
+    background-color: #DDD;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #CCC;
+    border-left: 0;
+    border-right: 0;
+    margin: 10px 0 10px 0;
+    color: #666;
+    font-weight: bold;
+
+}
+
 .wrap-him {
     position: relative;
     padding: 10px 0;

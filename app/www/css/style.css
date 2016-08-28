@@ -533,14 +533,25 @@ p.progress-indicator{
 
 .dash-card .pie-legend li {
     text-align: left;
-font-weight: bold;
-display: block;
+    font-weight: bold;
+    display: block;
 }
 
 .dash-card .pie-legend .pie-legend-text {
     margin-top: -2px;
-display: block;
+    display: block;
 }
+
+section.main-sec ion-item.double-item .item-badge .item-ball.item-smaller-ball {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+section.main-sec ion-item.double-item.no-border {
+    border-bottom: 0;
+}
+
 
 
 /*.cnt-red section.horizontal-sec p.sec-title, 

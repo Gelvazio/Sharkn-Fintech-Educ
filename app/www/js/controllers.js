@@ -9,6 +9,7 @@ app.controller("IntroCtrl", function($scope) {
         $state.go('app.dash');
     };
 
+
 });
 
 app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {

@@ -130,6 +130,18 @@ app.config(function($stateProvider, $urlRouterProvider) {
         color: "orange"
     });
 
+    $stateProvider.state('app.createpost', {
+        url: '/createpost',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/createpost.html',
+                controller: 'CreatepostCtrl'
+            }
+        },
+        color: "orange"
+    });
+
+
     $stateProvider.state('app.stats', {
         url: '/stats',
         views: {

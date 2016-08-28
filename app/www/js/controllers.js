@@ -87,7 +87,13 @@ app.controller('ForumCtrl', function($scope, $stateParams) {});
 
 app.controller('CoursesCtrl', function($scope, $stateParams) {});
 
-app.controller('ForumexemCtrl', function($scope, $stateParams) {});
+app.controller('CreatepostCtrl', function($scope, $stateParams) {});
+
+app.controller('ForumexemCtrl', function($scope, $stateParams) {
+    $scope.openAnswer = function() {
+        
+    }
+});
 
 app.controller('HistoryCtrl', function($scope){
     

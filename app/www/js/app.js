@@ -90,7 +90,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
         url: '/topics',
         views: {
             'menuContent': {
-                templateUrl: 'templates/topics.html'
+                templateUrl: 'templates/topics.html',
+                controller: "AulaCtrl"
             }
         },
         color: "blue"

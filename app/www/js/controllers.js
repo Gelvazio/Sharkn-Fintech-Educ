@@ -65,7 +65,9 @@ app.controller("ChatCtrl", function($scope){
 
 });
 
-app.controller('PlaylistCtrl', function($scope, $stateParams) {});
+app.controller('AulaCtrl', function($scope, $stateParams) {
+    
+});
 
 app.controller('ForumCtrl', function($scope, $stateParams) {});
 

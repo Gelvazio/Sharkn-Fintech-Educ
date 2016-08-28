@@ -203,7 +203,7 @@ p.intro {
 
 .circle {
   padding: 1%;
-  padding-top: 50%;
+  padding-top: -100%;
 }
 
 .fa-circle {
@@ -212,4 +212,9 @@ p.intro {
 
 .fa-circle-o {
   color: #211A7D;
+}
+
+.cel {
+  padding-top: 50px;
+  margin-bottom: -25%;
 }

@@ -68,10 +68,33 @@ app.controller("ChatCtrl", function($scope){
 
 app.controller('PlaylistCtrl', function($scope, $stateParams) {});
 
-<<<<<<< HEAD
-app.controller('LoginCtrl', function($scope, $stateParams) {});
-=======
 app.controller('ForumCtrl', function($scope, $stateParams) {});
 
 app.controller('ForumexemCtrl', function($scope, $stateParams) {});
->>>>>>> 1ca3231455fb4d5e99d9ed26b9dec82369d13169
+
+app.controller("DashCtrl", function($scope){
+    $scope.linedata = [
+        [500, 550, 470, 600, 700, 800],
+    ];
+    $scope.linecolor = ['#5e35b1'];
+    $scope.linelabels = ["Mar", "Abr", "Mai", "Jun", "Jul", "Ago"];
+
+    $scope.piedata = [
+        40, 35, 10, 10, 5
+    ];
+    $scope.piecolors = ['#5e35b1', '#2E7D32', '#FF5722', '#D32F2F', '#AAAAAA'];
+    $scope.pielabels = ["Contas", "Vestuário", "Alimentação", "Transporte", "Outros"];
+
+    $scope.newlinedata = [
+        [100, 150, 150, 100, 250, 350],
+    ];
+    $scope.newlinecolor = ['#2E7D32'];
+    $scope.newlinelabels = ["Mar", "Abr", "Mai", "Jun", "Jul", "Ago"];
+
+    $scope.linedata3 = [
+        [50, 75, 100, 100, 125, 150],
+    ];
+    $scope.linecolor3 = ['#3F51B5'];
+    $scope.linelabels3 = ["Mar", "Abr", "Mai", "Jun", "Jul", "Ago"];
+
+});

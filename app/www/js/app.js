@@ -141,6 +141,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
         color: "green"
     });
 
+    $stateProvider.state('app.courses', {
+        url: '/courses',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/courses.html',
+                controller: 'CoursesCtrl'
+            }
+        },
+        color: "blue"
+    });
+
     $stateProvider.state('app.community', {
         url: '/community',
         views: {

@@ -1,5 +1,18 @@
 <ion-view view-title="Adicionar Investimento">
     <ion-content>
-        PIPI
+        <div class="list">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Nome do Investimento</span>
+                <input type="text" placeholder="Nome do Investimento">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Valor do Investimento</span>
+                <input type="text" name="field" ng-model="money" ui-money-mask placeholder="Valor do Investimento">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Tags</span>
+                <input type="text" placeholder="Tags">
+            </label>
+        </div>
     </ion-content>
 </ion-view>

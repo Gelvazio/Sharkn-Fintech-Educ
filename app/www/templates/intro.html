@@ -1,44 +1,53 @@
-<ion-view hide-back-button="true" hide-nav-bar="true" >
-    <ion-content class="intro padding">
+<ion-view hide-back-button="true" hide-nav-bar="true">
+    <ion-content class="intro padding" scroll="false">
         <ion-slide-box on-slide-changed="slideChanged(index)">
             <ion-slide>
                 <div class="padding" align="center">
                     <img class="logo" src="img/Logoporquinhotransparentecontorno.png">
                 </div>
                 <div class="main intro_title">
-                    <p class="intro animated fadeIn">
-                             Com o Fintutor você
-                        <br> poderá aprender como
-                        <br> cuidar e aprimorar o
-                        <br> controle de suas finanças!
-                    </p>
-                </div>  
-            </ion-slide>
-            <ion-slide>
-                <div class="title">
-                    <h3>Aprenda a valorizar!</h3>
-
-                    <p>     Obtenha estatísticas
-                        <br>de seus gastos e avaliações
-                        <br>do seu tutor!
-                    </p>
-                    <div class="cel">
-                        <img src="img/iphone2.png">
-                    </div>
-                </div>
-            </ion-slide>
-            <ion-slide>
-                <div class="title">
-                    <h3>Login</h3>
-                    <br><br>
-                    <a href="#/app/dash" class="button button-block button-positive">
-                        <spam class="fa fa-facebook-official" align="left"></spam>  Login com o Facebook
+                    <p class="intro animated fadeIn introp superintrop">Com o Fintutor você retoma o controle de suas finanças!</p>
+                    <br>
+                    <a href="#/app/dash" class="button button-block button-outline button-darkblue">
+                        <spam class="fa fa-facebook-official" align="left"></spam> Login com o Facebook
                     </a>
                 </div>
             </ion-slide>
+            <ion-slide>
+                <div class="padding imgintro" align="center">
+                    <img class="logo naologo" src="img/chart.png">
+                </div>
+                <div class="title">
+                    <h3 class="introh">Seus gastos, em um só lugar</h3>
+                    <p class="introp"> Tenha acesso a gráficos e estatísticas das suas finanças na palma da sua mão! Com essa visão geral, fica mais fácil saber onde melhorar.
+                    </p>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="padding imgintro" align="center">
+                    <img class="logo naonaologo" src="img/chat.png">
+                </div>
+                <div class="title">
+                    <h3 class="introh">Atendimento personalizado</h3>
+                    <p class="introp"> Um tutor especializado em finanças estará sempre de prontidão para acompanhar seus gastos e traçar suas metas. Ele também terá o maior prazer em tirar suas dúvidas!
+                    </p>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="padding imgintro" align="center">
+                    <span class="ion-ios-lightbulb-outline"></span>
+                </div>
+                <div class="title">
+                    <h3 class="introh">Aprendizado constante</h3>
+                    <p class="introp"> Temos uma série de mini-cursos para ajudar sua evolução financeira. Como investir na bolsa? Preparar um orçamento? As respostas estão aqui.
+                    </p>
+                </div>
+            </ion-slide>
         </ion-slide-box>
-        <div class="icon">
-            <ion-icon class="circle" ng-repeat="x in myTabs" ng-class="{'fa fa-circle': x==slideIndex, 'fa fa-circle-o': x!=slideIndex}"></ion-icon>
+        <div class="merdacon-wrap">
+            <div class="icon merdacon">
+                <ion-icon class="circle" ng-repeat="x in myTabs" ng-class="{'fa fa-circle': x==slideIndex, 'fa fa-circle-o': x!=slideIndex}"></ion-icon>
+            </div>
         </div>
     </ion-content>
 </ion-view>

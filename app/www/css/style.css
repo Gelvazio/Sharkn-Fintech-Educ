@@ -80,6 +80,15 @@ ion-content{
     font-weight: bold !important;
 }
 
+.center {
+    text-align: center !important;
+}
+
+p.normal-text {
+    width: 100%;
+    font-size: 1.1em;
+}
+
 .item-danger {
     background-color: rgba(255, 0, 0, 0.10) !important;
 
@@ -550,6 +559,14 @@ section.main-sec ion-item.double-item .item-badge .item-ball.item-smaller-ball {
 
 section.main-sec ion-item.double-item.no-border {
     border-bottom: 0;
+}
+
+.item-icon-left.item-icon-smaller {
+    font-size: 15px;
+}
+
+.item-icon-left.item-icon-smaller span {
+    font-size: 22px;
 }
 
 

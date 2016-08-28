@@ -51,10 +51,8 @@ p.intro {
   margin-top: -20px;
 }
 .intro_title h1, .title h3 {
-	font-family: 'avenir-light', sans-serif;
   font-size: 2.7em;
   font-weight: bold;
-	text-transform: capitalize;
 	text-align: center;
   padding: 14px 0px;
   color: #211A7D;

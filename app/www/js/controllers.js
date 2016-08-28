@@ -2,7 +2,7 @@ var app = angular.module('sharkapp.controllers', []);
 
 app.controller("IntroCtrl", function($scope, $location, $ionicSlideBoxDelegate) {
     // Called to navigate to the main app
-    $scope.myTabs = [0,1];
+    $scope.myTabs = [0,1, 2];
     $scope.slideIndex = 0;  
     $scope.startApp = function() {
         $ionicHistory.nextViewOptions({

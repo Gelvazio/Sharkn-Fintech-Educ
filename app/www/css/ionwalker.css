@@ -27,7 +27,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 p.intro {
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.4em;
   font-weight: 300;
   animation-delay: 200ms;
@@ -203,6 +203,7 @@ p.intro {
 
 .circle {
   padding: 1%;
+  padding-top: 50%;
 }
 
 .fa-circle {

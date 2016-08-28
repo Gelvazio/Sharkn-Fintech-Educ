@@ -1,7 +1,9 @@
 var app = angular.module('sharkapp.controllers', []);
 
-app.controller("IntroCtrl", function($scope, $cordovaOauth) {
+app.controller("IntroCtrl", function($scope, $location, $ionicSlideBoxDelegate) {
     // Called to navigate to the main app
+    $scope.myTabs = [0,1, 2];
+    $scope.slideIndex = 0;  
     $scope.startApp = function() {
         $ionicHistory.nextViewOptions({
             disableBack: true
@@ -9,15 +11,21 @@ app.controller("IntroCtrl", function($scope, $cordovaOauth) {
         $state.go('app.dash');
     };
 
+    // Called each time the slide changes
+    $scope.slideChanged = function(index) {
+        $scope.slideIndex = index;
+    };
 
     $scope.login = function() {
-        $cordovaOauth.facebook("593921090779069", ["email", "read_stream", "user_website", "user_location", "user_relationships"]).then(function(result) {
-            $localStorage.accessToken = result.access_token;
-            $location.path("/app/dash");
-        }, function(error) {
-            alert(error);
-        });
+        /* Descomentar em produção */
+        //$cordovaOauth.facebook("593921090779069", ["email", "read_stream", "user_website", "user_location", "user_relationships"]).then(function(result) {
+            //$localStorage.accessToken = result.access_token;
+            $location.path("#/app/dash");
+        //}, function(error) {
+        //    alert(error);
+        //});
     };
+
 });
 
 app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {

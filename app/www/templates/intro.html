@@ -2,37 +2,43 @@
     <ion-content class="intro padding">
         <ion-slide-box on-slide-changed="slideChanged(index)">
             <ion-slide>
+                <div class="padding" align="center">
+                    <img class="logo" src="img/Logoporquinhotransparentecontorno.png">
+                </div>
                 <div class="main intro_title">
-                    <h1 class="animated fadeIn">Bem-Vindo!</h1>
                     <p class="intro animated fadeIn">
-                             Com o FinTutor você
+                             Com o Fintutor você
                         <br> poderá aprender como
                         <br> cuidar e aprimorar o
                         <br> controle de suas finanças!
                     </p>
-                    <div class="demacate animated fadeInRight">
-                        <div class="row">
-                            <div class="col col-33">
-                                <span class="arrow left"></span>
-                            </div>
-                            <div class="col col-33">
-                                <p>Deslize</p>
-                            </div>
-                            <div class="col col-33">
-                                <span class="arrow right"></span>
-                            </div>
-                        </div>
+                </div>  
+            </ion-slide>
+            <ion-slide>
+                <div class="title">
+                    <h3>Aprenda a valorizar!</h3>
+
+                    <p>     Obtenha estatísticas
+                        <br>de seus gastos e avaliações
+                        <br>do seu tutor!
+                    </p>
+                    <div class="cel">
+                        <img src="img/iphone2.png">
                     </div>
                 </div>
             </ion-slide>
             <ion-slide>
                 <div class="title">
                     <h3>Login</h3>
-                    <button ng-click="login()" class="button button-block button-balanced">
-                        Facebook Login
-                    </button>
+                    <br><br>
+                    <a href="#/app/dash" class="button button-block button-positive">
+                        <spam class="fa fa-facebook-official" align="left"></spam>  Login com o Facebook
+                    </a>
                 </div>
             </ion-slide>
         </ion-slide-box>
+        <div class="icon">
+            <ion-icon class="circle" ng-repeat="x in myTabs" ng-class="{'fa fa-circle': x==slideIndex, 'fa fa-circle-o': x!=slideIndex}"></ion-icon>
+        </div>
     </ion-content>
 </ion-view>

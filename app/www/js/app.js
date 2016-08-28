@@ -119,6 +119,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
         color: "red"
     });
 
+    $stateProvider.state('app.addinvest', {
+        url: '/history/addinvest',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/addinvest.html',
+                controller: 'AddInvestCtrl'
+            }
+        },
+        color: "green"
+    });
+
     $stateProvider.state('app.forumexem', {
         url: '/forumexem',
         views: {

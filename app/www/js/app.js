@@ -79,7 +79,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
         url: '/dash',
         views: {
             'menuContent': {
-                templateUrl: 'templates/dash.html'
+                templateUrl: 'templates/dash.html',
+                controller: "DashCtrl"
             }
         },
         color: "purple"
@@ -140,5 +141,5 @@ app.config(function($stateProvider, $urlRouterProvider) {
     });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/community');
+    $urlRouterProvider.otherwise('/app/dash');
 });

@@ -76,6 +76,22 @@ ion-content{
     padding-left: 25px !important;
 }
 
+.bold {
+    font-weight: bold !important;
+}
+
+.item-danger {
+    background-color: rgba(255, 0, 0, 0.10) !important;
+
+}
+
+.item-success {
+    background-color: rgba(64, 174, 70, 0.35) !important;   
+}
+
+.item-danger p, .item-success p{
+    color: #333;
+}
 
 /* SIDEMENU e HEADER */
 
@@ -275,6 +291,10 @@ section.main-sec ion-item.double-item .item-badge .item-ball {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
+}
+
+section.main-sec ion-item.double-item .item-badge .item-ball.item-image img {
+    border-radius: 100px;
 }
 
 section.main-sec ion-item.double-item .item-inside {
@@ -503,6 +523,23 @@ p.progress-indicator{
     position: absolute;
     bottom: 10px;
     right: 5px;
+}
+
+.dash-card .item-divider {
+    font-weight: bold;
+    color: #5e35b1;
+    text-align: center;
+}
+
+.dash-card .pie-legend li {
+    text-align: left;
+font-weight: bold;
+display: block;
+}
+
+.dash-card .pie-legend .pie-legend-text {
+    margin-top: -2px;
+display: block;
 }
 
 

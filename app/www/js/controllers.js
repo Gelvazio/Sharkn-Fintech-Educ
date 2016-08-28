@@ -100,13 +100,15 @@ app.controller('CreatepostCtrl', function($scope, $stateParams) {});
 app.controller('ForumexemCtrl', function($scope, $stateParams) {
     $scope.canShowMe = false;
     $scope.canShowHim = true;
+    $scope.canShowTheBoss = false;
     $scope.openAnswer = function() {
         $scope.canShowMe = true;
         $scope.canShowHim = false;        
     }
     $scope.answer = function() {
         $scope.canShowMe = false;
-        $scope.canShowHim = true;        
+        $scope.canShowHim = true;
+        $scope.canShowTheBoss = true;       
     }
 });
 

@@ -1,4 +1,4 @@
-var app = angular.module('sharkapp', ['ionic', 'sharkapp.controllers', 'chart.js', 'ngCordova', 'ngCordovaOauth']);
+var app = angular.module('sharkapp', ['ionic', 'sharkapp.controllers', 'chart.js', 'ngCordova', 'ngCordovaOauth', 'ui.utils.masks']);
 
 app.run(function($ionicPlatform, $state, $rootScope) {
     $ionicPlatform.ready(function() {

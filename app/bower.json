@@ -9,6 +9,7 @@
     "font-awesome": "fontawesome#^4.6.3",
     "Chart.js": "^2.1.6",
     "angular-chart.js": "^0.10.2",
-    "ng-cordova-oauth": "^0.2.10"
+    "ng-cordova-oauth": "^0.2.10",
+    "angular-input-masks": "^2.4.0"
   }
 }

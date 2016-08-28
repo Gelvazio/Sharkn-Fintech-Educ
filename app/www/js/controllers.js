@@ -1,12 +1,22 @@
 var app = angular.module('sharkapp.controllers', []);
 
-app.controller("IntroCtrl", function($scope) {
+app.controller("IntroCtrl", function($scope, $cordovaOauth, $localStorage, $location) {
     // Called to navigate to the main app
     $scope.startApp = function() {
         $ionicHistory.nextViewOptions({
             disableBack: true
         });
         $state.go('app.dash');
+    };
+
+    $scope.login = function() {
+        $cordovaOauth.facebook("593921090779069", ["email", "read_stream", "user_website", "user_location", "user_relationships"]).then(function(result) {
+            $localStorage.accessToken = result.access_token;
+            $location.path("/profile");
+        }, function(error) {
+            alert("There was a problem signing in!  See the console for logs");
+            console.log(error);
+        });
     };
 
 });
@@ -57,3 +67,5 @@ app.controller("ChatCtrl", function($scope){
 });
 
 app.controller('PlaylistCtrl', function($scope, $stateParams) {});
+
+app.controller('LoginCtrl', function($scope, $stateParams) {});

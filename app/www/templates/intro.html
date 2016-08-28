@@ -1,14 +1,14 @@
-<ion-view hide-back-button="true" hide-nav-bar="true">
+<ion-view hide-back-button="true" hide-nav-bar="true" >
     <ion-content class="intro padding">
         <ion-slide-box on-slide-changed="slideChanged(index)">
             <ion-slide>
                 <div class="main intro_title">
-                    <h1 class="animated fadeIn">Welcome!</h1>
+                    <h1 class="animated fadeIn">Bem-Vindo!</h1>
                     <p class="intro animated fadeIn">
-                        This awesome new
-                        <br> app will help you cook
-                        <br> and save you money.
-                        <br> #score
+                             Com o FinTutor você
+                        <br> poderá aprender como
+                        <br> cuidar e aprimorar o
+                        <br> controle de suas finanças!
                     </p>
                     <div class="demacate animated fadeInRight">
                         <div class="row">
@@ -16,7 +16,7 @@
                                 <span class="arrow left"></span>
                             </div>
                             <div class="col col-33">
-                                <p>Take a Tour</p>
+                                <p>Deslize</p>
                             </div>
                             <div class="col col-33">
                                 <span class="arrow right"></span>
@@ -27,42 +27,12 @@
             </ion-slide>
             <ion-slide>
                 <div class="title">
-                    <h3>Amazing App</h3>
-                    <p>5 star "Excellent" rating from customers.</p>
-                    <img ng-src="./img/phone1.png" class="animated bounceInRight">
-                </div>
-            </ion-slide>
-            <ion-slide>
-                <div class="title">
-                    <h3>Store Circulars</h3>
-                    <p>We got 'em wanting more</p>
-                    <img src="img/phone2.png">
-                </div>
-            </ion-slide>
-            <ion-slide>
-                <div class="title">
-                    <h3>Shopping List</h3>
-                    <p>Boom! Done</p>
-                    <img src="img/phone3.png">
-                </div>
-            </ion-slide>
-            <ion-slide>
-                <div class="title">
-                    <h3>Reading List</h3>
-                    <p>Find something new, or add your own</p>
-                    <img src="img/phone4.png">
+                    <h3>Login</h3>
+                    <button ng-click="login()" class="button button-block button-balanced">
+                        Facebook Login
+                    </button>
                 </div>
             </ion-slide>
         </ion-slide-box>
-        <ion-footer-bar class="animated fadeInUp">
-            <div class="row">
-                <div class="col col-50">
-                    <a href="#">Get Started</a>
-                </div>
-                <div class="col col-50">
-                    <a href="#" ng-click="openModal()">Log In</a>
-                </div>
-            </div>
-        </ion-footer-bar>
     </ion-content>
 </ion-view>

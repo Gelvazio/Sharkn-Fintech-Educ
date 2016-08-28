@@ -21,7 +21,9 @@
 }
 
 /* Intro */
-
+.intro {
+  background: #2424FF;
+}
 p.intro {
   font-size: 1.5em;
   line-height: 1.4em;
@@ -79,6 +81,8 @@ p.intro {
   margin: 22px 0px 0px 0px;
   display: inline-block;
   position: relative;
+  color: #311234;
+  background-color: #311234;
 }
 .arrow::before {
   content: '';

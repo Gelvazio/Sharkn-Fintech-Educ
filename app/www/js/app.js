@@ -1,4 +1,4 @@
-var app = angular.module('sharkapp', ['ionic', 'sharkapp.controllers', 'chart.js']);
+var app = angular.module('sharkapp', ['ionic', 'sharkapp.controllers', 'chart.js', 'ngCordova']);
 
 app.run(function($ionicPlatform, $state, $rootScope) {
     $ionicPlatform.ready(function() {
@@ -129,5 +129,5 @@ app.config(function($stateProvider, $urlRouterProvider) {
     });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/community');
+    $urlRouterProvider.otherwise('/intro');
 });

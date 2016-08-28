@@ -7,6 +7,24 @@
 
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" />
 
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '593921090779069',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <!-- bower:css -->
     <link rel="stylesheet" href="lib/angular-chart.js/dist/angular-chart.css" />
     <!-- endbower -->
@@ -28,6 +46,7 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/ng-cordova.min.js"></script>
     <script src="cordova.js"></script>
 
     <!-- bower:js -->

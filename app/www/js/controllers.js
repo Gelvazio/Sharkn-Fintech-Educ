@@ -68,4 +68,10 @@ app.controller("ChatCtrl", function($scope){
 
 app.controller('PlaylistCtrl', function($scope, $stateParams) {});
 
+<<<<<<< HEAD
 app.controller('LoginCtrl', function($scope, $stateParams) {});
+=======
+app.controller('ForumCtrl', function($scope, $stateParams) {});
+
+app.controller('ForumexemCtrl', function($scope, $stateParams) {});
+>>>>>>> 1ca3231455fb4d5e99d9ed26b9dec82369d13169

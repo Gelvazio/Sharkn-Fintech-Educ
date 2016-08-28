@@ -407,6 +407,19 @@ p.progress-indicator{
     background-color: transparent;
 }
 
+.date {
+    background-color: #DDD;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #CCC;
+    border-left: 0;
+    border-right: 0;
+    margin: 10px 0 10px 0;
+    color: #666;
+    font-weight: bold;
+
+}
+
 .wrap-him {
     position: relative;
     padding: 10px 0;
@@ -502,4 +515,26 @@ p.progress-indicator{
 .cnt-red section.horizontal-sec .sec-inner-balls .sec-item .sec-item-ball {
     background-color: #D32F2F !important;
 }
+.buttonrounded {
+      background-color: #FF0000; !important;
+  color:white !important;
+  z-index: 12 !important;
+  position: absolute !important; 
+  bottom: 10px !important;
+  right: 10px !important;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+  -webkit-transition: 0.2s linear !important;
+  transition: 0.2s linear !important;
+  -webkit-transition-property: -webkit-transform, all !important;
+  transition-property: transform, all !important;
+}
 
+.buttonrounded:hover{
+  -webkit-transform: translate3d(0, -1px, 0)  !important;
+  transform: translate3d(0, -1px, 0) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4) !important;
+    background: darken(#FF0000, 10%) !important;
+}

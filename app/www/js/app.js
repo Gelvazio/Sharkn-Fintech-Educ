@@ -100,7 +100,18 @@ app.config(function($stateProvider, $urlRouterProvider) {
         views: {
             'menuContent': {
                 templateUrl: 'templates/forum.html',
-                controller: 'PlaylistsCtrl'
+                controller: 'ForumCtrl'
+            }
+        },
+        color: "orange"
+    });
+
+    $stateProvider.state('app.forumexem', {
+        url: '/forumexem',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/forumexem.html',
+                controller: 'ForumexemCtrl'
             }
         },
         color: "orange"

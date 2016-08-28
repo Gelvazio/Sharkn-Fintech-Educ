@@ -196,3 +196,19 @@ p.intro {
   height: 65%;
   padding-top: 50px;
 }
+
+.icon {
+  text-align: center;
+}
+
+.circle {
+  padding: 1%;
+}
+
+.fa-circle {
+  color: #211A7D;
+}
+
+.fa-circle-o {
+  color: #211A7D;
+}

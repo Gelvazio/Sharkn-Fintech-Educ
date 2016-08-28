@@ -1,7 +1,9 @@
 var app = angular.module('sharkapp.controllers', []);
 
-app.controller("IntroCtrl", function($scope, $location) {
+app.controller("IntroCtrl", function($scope, $location, $ionicSlideBoxDelegate) {
     // Called to navigate to the main app
+    $scope.myTabs = [0,1];
+    $scope.slideIndex = 0;  
     $scope.startApp = function() {
         $ionicHistory.nextViewOptions({
             disableBack: true
@@ -9,6 +11,10 @@ app.controller("IntroCtrl", function($scope, $location) {
         $state.go('app.dash');
     };
 
+    // Called each time the slide changes
+    $scope.slideChanged = function(index) {
+        $scope.slideIndex = index;
+    };
 
     $scope.login = function() {
         /* Descomentar em produção */
@@ -19,6 +25,7 @@ app.controller("IntroCtrl", function($scope, $location) {
         //    alert(error);
         //});
     };
+
 });
 
 app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
@@ -62,11 +69,27 @@ app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
     };
 })
 
-app.controller("ChatCtrl", function($scope){
-
+app.controller("ChatCtrl", function($scope, $timeout, $ionicScrollDelegate){
+    $scope.inputText = "";
+    $scope.canShowMe = false;
+    $scope.canShowHim = false;
+    $timeout(function() {
+        $ionicScrollDelegate.scrollBottom();
+    }, 100);
+    $scope.sendMsg = function() {
+        $scope.inputText = "";
+        $scope.canShowMe = true;
+        $ionicScrollDelegate.scrollBottom();
+        $timeout(function(){
+            $scope.canShowHim = true;
+            $ionicScrollDelegate.scrollBottom();
+        }, 5000);
+    }
 });
 
-app.controller('PlaylistCtrl', function($scope, $stateParams) {});
+app.controller('AulaCtrl', function($scope, $stateParams) {
+    
+});
 
 app.controller('ForumCtrl', function($scope, $stateParams) {});
 

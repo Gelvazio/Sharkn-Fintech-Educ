@@ -40,7 +40,7 @@
                 Acho melhor primeiro pagar a última parcela do iPhone antes de realizar outra compra parcelada. Assim você não se complica mês que vem.
             </div>
         </div>
-        <div class="wrap-me">
+        <div class="wrap-me" ng-show="canShowMe">
             <div class="pic-me">
             </div>
             <div class="message-me">
@@ -48,12 +48,19 @@
             </div>
             <div style="clear:both;"></div>
         </div>
+        <div class="wrap-him" ng-show="canShowHim">
+            <div class="pic-him">
+            </div>
+            <div class="message-him super-smiley">
+                😃
+            </div>
+        </div>
     </ion-content>
-    <ion-footer-bar class="bar-stable">
+    <ion-footer-bar keyboard-attach class="bar-stable">
         <label class="item-input-wrapper">
-            <input type="text" placeholder="Digite sua mensagem...">
+            <input type="text" placeholder="Digite sua mensagem..." ng-model="inputText">
         </label>
-        <button class="button button-small button-clear cyan">
+        <button class="button button-small button-clear cyan" ng-enter="sendMsg()" ng-click="sendMsg()">
             Enviar
         </button>
     </ion-footer-bar>

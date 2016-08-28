@@ -12,17 +12,20 @@
                         <br> cuidar e aprimorar o
                         <br> controle de suas finanças!
                     </p>
-                </div>
+                </div>  
             </ion-slide>
             <ion-slide>
                 <div class="title">
                     <h3>Login</h3>
 
                     <a href="#/app/dash" class="button button-block button-positive">
-                    <i> Facebook Login
+                        Facebook Login
                     </a>
                 </div>
             </ion-slide>
         </ion-slide-box>
+        <div class="icon">
+            <ion-icon class="circle" ng-repeat="x in myTabs" ng-class="{'fa fa-circle': x==slideIndex, 'fa fa-circle-o': x!=slideIndex}"></ion-icon>
+        </div>
     </ion-content>
 </ion-view>

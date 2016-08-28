@@ -119,6 +119,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
         color: "red"
     });
 
+    $stateProvider.state('app.history', {
+        url: '/history/:username',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/history.html',
+                controller: 'HistoryCtrl'
+            }
+        },
+        color: "red"
+    });
+
     $stateProvider.state('app.addinvest', {
         url: '/history/addinvest',
         views: {

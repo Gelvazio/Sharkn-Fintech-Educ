@@ -27,7 +27,27 @@
                     </div>
                 </ion-item>
             </div>
-            
+
+			<div class="dash-card card" ng-controller="invests" ng-show="canShowMe">
+                <ion-item class="double-item item-text-wrap white-item">
+                    <div class="double-wrapper">
+                        <div class="item-badge">
+                            <div class="item-ball item-image red-back">
+                                <span class="fa fa-fw fa-shopping-cart"></span>
+                            </div>
+                            <p class="small colorful">28/08</p>
+                        </div>
+                        <div class="item-inside">
+                            <h1 class="red bold">{{nomeinvest}}</h1>
+                            <p class="normal-text">{{money}}</p>
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item class="item-text-wrap white-item">
+                    <span class="green-back pills">{{tag}}</span>
+                </ion-item>
+            </div>
+
             <div class="dash-card card">
                 <ion-item class="double-item item-text-wrap white-item">
                     <div class="double-wrapper">

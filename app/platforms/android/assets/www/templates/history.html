@@ -1,20 +1,33 @@
 <ion-view view-title="Histórico">
     <ion-content>
         <section class="main-sec">
-			<div class="list card">
-                <ion-item class="double-item no-border white-item">
+            <div class="dash-card card">
+                <ion-item class="double-item no-border white-item" ng-click="addInvest()">
                     <div class="double-wrapper">
                         <div class="item-badge">
-                            <div class="item-ball item-smaller-ball red-back">
+                            <div class="item-ball item-smaller-ball blue-back">
                                 <span class="fa fa-fw fa-plus"></span>
                             </div>
                         </div>
                         <div class="item-inside">
-                            <h2 class="colorful">Adicionar despesa	</h2>
+                            <h2 class="colorful">Adicionar investimento</h2>
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item class="double-item no-border white-item">
+                    <div class="double-wrapper">
+                        <div class="item-badge">
+                            <div class="item-ball item-smaller-ball red-back">
+                                <span class="fa fa-fw fa-minus"></span>
+                            </div>
+                        </div>
+                        <div class="item-inside">
+                            <h2 class="colorful">Adicionar despesa  </h2>
                         </div>
                     </div>
                 </ion-item>
             </div>
+            
             <div class="dash-card card">
                 <ion-item class="double-item item-text-wrap white-item">
                     <div class="double-wrapper">

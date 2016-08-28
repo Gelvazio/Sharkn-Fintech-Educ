@@ -32,20 +32,44 @@
                     </p>
                 </div>
             </div>
-            <div class="list card">
-                <ion-item class="double-item no-border white-item">
+            <div class="list card" ng-show="canShowTheBoss">
+                <div class="item item-avatar">
+                    <img src="img/leo.jpg">
+                    <h2><b>RE: LCA OU LCI</b></h2>
+                    <p>Leonardo Padilha</p>
+                </div>
+                <div class="item item-body">
+                    <p>
+                        {{textobox}}
+                    </p>
+                </div>
+            </div>
+            <div class="list card" ng-show="canShowMe">
+                <div class="item item-avatar">
+                    <img src="img/leo.jpg">
+                    <h2><b>RE: LCA OU LCI</b></h2>
+                    <p>Leonardo Padilha</p>
+                </div>
+                <div class="item item-body">
+                    <label class="item item-input">
+                		<textarea ng-model="textobox" rows="10" placeholder="Escreva a sua resposta"></textarea>
+              		</label>
+                </div>
+                            <button class="button button-block button-energized" ng-click="answer()">Enviar
+            </button>
+            </div>
+                <ion-item ng-show="canShowHim" class="double-item no-border">
                     <div class="double-wrapper">
                         <div class="item-badge">
                             <div class="item-ball item-smaller-ball orange-back">
                                 <span class="fa fa-fw fa-plus"></span>
                             </div>
                         </div>
-                        <div class="item-inside">
+                        <div class="item-inside" ng-click="openAnswer()" >
                             <h2 class="colorful">Responder</h2>
                         </div>
                     </div>
                 </ion-item>
-            </div>
         </section>
     </ion-content>
 </ion-view>

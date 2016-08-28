@@ -1,7 +1,9 @@
 var app = angular.module('sharkapp.controllers', []);
 
-app.controller("IntroCtrl", function($scope, $cordovaOauth) {
+app.controller("IntroCtrl", function($scope, $location, $ionicSlideBoxDelegate) {
     // Called to navigate to the main app
+    $scope.myTabs = [0,1,2,3];
+    $scope.slideIndex = 0;  
     $scope.startApp = function() {
         $ionicHistory.nextViewOptions({
             disableBack: true
@@ -9,15 +11,21 @@ app.controller("IntroCtrl", function($scope, $cordovaOauth) {
         $state.go('app.dash');
     };
 
+    // Called each time the slide changes
+    $scope.slideChanged = function(index) {
+        $scope.slideIndex = index;
+    };
 
     $scope.login = function() {
-        $cordovaOauth.facebook("593921090779069", ["email", "read_stream", "user_website", "user_location", "user_relationships"]).then(function(result) {
-            $localStorage.accessToken = result.access_token;
-            $location.path("/app/dash");
-        }, function(error) {
-            alert(error);
-        });
+        /* Descomentar em produção */
+        //$cordovaOauth.facebook("593921090779069", ["email", "read_stream", "user_website", "user_location", "user_relationships"]).then(function(result) {
+            //$localStorage.accessToken = result.access_token;
+            $location.path("#/app/dash");
+        //}, function(error) {
+        //    alert(error);
+        //});
     };
+
 });
 
 app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
@@ -61,8 +69,22 @@ app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
     };
 })
 
-app.controller("ChatCtrl", function($scope){
-
+app.controller("ChatCtrl", function($scope, $timeout, $ionicScrollDelegate){
+    $scope.inputText = "";
+    $scope.canShowMe = false;
+    $scope.canShowHim = false;
+    $timeout(function() {
+        $ionicScrollDelegate.scrollBottom();
+    }, 100);
+    $scope.sendMsg = function() {
+        $scope.inputText = "";
+        $scope.canShowMe = true;
+        $ionicScrollDelegate.scrollBottom();
+        $timeout(function(){
+            $scope.canShowHim = true;
+            $ionicScrollDelegate.scrollBottom();
+        }, 5000);
+    }
 });
 
 app.controller('AulaCtrl', function($scope, $stateParams) {
@@ -71,10 +93,33 @@ app.controller('AulaCtrl', function($scope, $stateParams) {
 
 app.controller('ForumCtrl', function($scope, $stateParams) {});
 
-app.controller('ForumexemCtrl', function($scope, $stateParams) {});
+app.controller('CoursesCtrl', function($scope, $stateParams) {});
 
-app.controller('HistoryCtrl', function($scope){
-    
+app.controller('CreatepostCtrl', function($scope, $stateParams) {});
+
+app.controller('ForumexemCtrl', function($scope, $stateParams) {
+    $scope.canShowMe = false;
+    $scope.canShowHim = true;
+    $scope.canShowTheBoss = false;
+    $scope.openAnswer = function() {
+        $scope.canShowMe = true;
+        $scope.canShowHim = false;        
+    }
+    $scope.answer = function() {
+        $scope.canShowMe = false;
+        $scope.canShowHim = true;
+        $scope.canShowTheBoss = true;       
+    }
+});
+
+app.controller('HistoryCtrl', function($scope,  $location){
+    $scope.addInvest = function () {
+        $location.path("/app/history/addinvest");
+    };
+});
+
+app.controller('AddInvestCtrl', function($scope,  $location){
+
 });
 
 app.controller("DashCtrl", function($scope){

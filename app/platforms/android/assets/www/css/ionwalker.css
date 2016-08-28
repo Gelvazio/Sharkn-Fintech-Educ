@@ -9,6 +9,7 @@
        url('../fonts/avenir-book.svg') format('svg');
   font-weight: normal;
   font-style: normal;
+
 }
 
 /* Side the scroll bar */
@@ -22,19 +23,21 @@
 
 /* Intro */
 .intro {
-  background: #2424FF;
+  background: #E2DEDD;
+  font-family: 'Montserrat', sans-serif;
 }
 p.intro {
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.4em;
   font-weight: 300;
   animation-delay: 200ms;
 }
 .intro_title {
-  margin-top: 27vh;
+  margin-top: 0vh;
 }
 .title {
   margin-top: 14.3vh;
+  color: #211A7D;
 }
 .title img {
   display: block;
@@ -43,29 +46,25 @@ p.intro {
 }
 .title p {
   text-align: center;
-  color: #000;
+  color: #211A7D;
   font-weight: 600;
   margin-top: -20px;
 }
 .intro_title h1, .title h3 {
-	font-family: 'avenir-light', sans-serif;
   font-size: 2.7em;
   font-weight: bold;
-	text-transform: capitalize;
 	text-align: center;
-	color: #fff;
   padding: 14px 0px;
-  color: #fff;
+  color: #211A7D;
 }
 .intro_title p {
-  color: #fff;
+  color: #211A7D;
   margin: 3% auto;
   text-align: center;
 }
 .intro_title p:last-child {
   font-size: 1.1em;
   text-align: center;
-  color: #000;
   margin-top: 10%;
   text-transform: uppercase;
   font-weight: 600;
@@ -81,8 +80,8 @@ p.intro {
   margin: 22px 0px 0px 0px;
   display: inline-block;
   position: relative;
-  color: #311234;
-  background-color: #311234;
+  color: #211A7D;
+  background-color: #211A7D;
 }
 .arrow::before {
   content: '';
@@ -92,7 +91,7 @@ p.intro {
   top: 50%;
   left: 50%;
   border-style: solid;
-  border-color: #000;
+  border-color: #211A7D;
   border-width: 1px 1px 0 0;
   position: absolute;
   -moz-transform-origin: 50% 50% 50%;
@@ -121,7 +120,7 @@ p.intro {
   top: 50%;
   left: 50%;
   border-style: solid;
-  border-color: #000;
+  border-color: #211A7D;
   position: absolute;
   -moz-transform-origin: 50% 50% 50%;
   -ms-transform-origin: 50% 50% 50%;
@@ -188,4 +187,32 @@ p.intro {
 /* change margin between slider icon*/
 .slider-pager .slider-pager-page {
   margin: 0px !important;
+}
+
+.logo {
+  width: 65%;
+  height: 65%;
+  padding-top: 50px;
+}
+
+.icon {
+  text-align: center;
+}
+
+.circle {
+  padding: 1%;
+  padding-top: -100%;
+}
+
+.fa-circle {
+  color: #211A7D;
+}
+
+.fa-circle-o {
+  color: #211A7D;
+}
+
+.cel {
+  padding-top: 50px;
+  margin-bottom: -25%;
 }

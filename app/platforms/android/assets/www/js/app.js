@@ -1,4 +1,4 @@
-var app = angular.module('sharkapp', ['ionic', 'sharkapp.controllers', 'chart.js', 'ngCordova', 'ngCordovaOauth']);
+var app = angular.module('sharkapp', ['ionic', 'sharkapp.controllers', 'chart.js', 'ngCordova', 'ngCordovaOauth', 'ui.utils.masks']);
 
 app.run(function($ionicPlatform, $state, $rootScope) {
     $ionicPlatform.ready(function() {
@@ -119,6 +119,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
         color: "red"
     });
 
+    $stateProvider.state('app.addinvest', {
+        url: '/history/addinvest',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/addinvest.html',
+                controller: 'AddInvestCtrl'
+            }
+        },
+        color: "red"
+    });
+
     $stateProvider.state('app.forumexem', {
         url: '/forumexem',
         views: {
@@ -130,6 +141,18 @@ app.config(function($stateProvider, $urlRouterProvider) {
         color: "orange"
     });
 
+    $stateProvider.state('app.createpost', {
+        url: '/createpost',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/createpost.html',
+                controller: 'CreatepostCtrl'
+            }
+        },
+        color: "orange"
+    });
+
+
     $stateProvider.state('app.stats', {
         url: '/stats',
         views: {
@@ -139,6 +162,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
             }
         },
         color: "green"
+    });
+
+    $stateProvider.state('app.courses', {
+        url: '/courses',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/courses.html',
+                controller: 'CoursesCtrl'
+            }
+        },
+        color: "blue"
     });
 
     $stateProvider.state('app.community', {

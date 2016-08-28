@@ -11,6 +11,10 @@
                         {
                             "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -19,6 +23,9 @@
     },
     "installed_plugins": {
         "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.sharkfintech.mobile"
+        },
+        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.sharkfintech.mobile"
         }
     },
@@ -32,9 +39,18 @@
                 "cordova.InAppBrowser.open",
                 "window.open"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+            "id": "cordova-plugin-statusbar.statusbar",
+            "pluginId": "cordova-plugin-statusbar",
+            "clobbers": [
+                "window.StatusBar"
+            ]
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-inappbrowser": "1.4.1-dev"
+        "cordova-plugin-inappbrowser": "1.4.1-dev",
+        "cordova-plugin-statusbar": "2.1.3"
     }
 }

@@ -139,7 +139,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
                 controller: 'AddInvestCtrl'
             }
         },
-        color: "green"
+        color: "red"
     });
 
     $stateProvider.state('app.forumexem', {

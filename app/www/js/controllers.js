@@ -72,6 +72,10 @@ app.controller('ForumCtrl', function($scope, $stateParams) {});
 
 app.controller('ForumexemCtrl', function($scope, $stateParams) {});
 
+app.controller('HistoryCtrl', function($scope){
+    
+});
+
 app.controller("DashCtrl", function($scope){
     $scope.linedata = [
         [500, 550, 470, 600, 700, 800],

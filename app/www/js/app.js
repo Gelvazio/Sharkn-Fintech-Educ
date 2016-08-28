@@ -107,6 +107,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
         color: "orange"
     });
 
+    $stateProvider.state('app.history', {
+        url: '/history',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/history.html',
+                controller: 'HistoryCtrl'
+            }
+        },
+        color: "red"
+    });
+
     $stateProvider.state('app.forumexem', {
         url: '/forumexem',
         views: {
@@ -141,5 +152,5 @@ app.config(function($stateProvider, $urlRouterProvider) {
     });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/dash');
+    $urlRouterProvider.otherwise('/app/forum');
 });

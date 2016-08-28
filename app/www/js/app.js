@@ -75,6 +75,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
         controller: 'AppCtrl'
     });
 
+
     $stateProvider.state('app.dash', {
         url: '/dash',
         views: {
@@ -119,12 +120,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
         color: "red"
     });
 
-    $stateProvider.state('app.history', {
-        url: '/history/:username',
+    $stateProvider.state('app.history2', {
+        url: '/history2',
         views: {
             'menuContent': {
-                templateUrl: 'templates/history.html',
-                controller: 'HistoryCtrl'
+                templateUrl: 'templates/history2.html',
+                controller: 'History2Ctrl'
             }
         },
         color: "red"

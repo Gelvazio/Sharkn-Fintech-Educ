@@ -117,7 +117,11 @@ app.controller('HistoryCtrl', function($scope,  $location){
         $location.path("/app/history/addinvest");
     };
 });
-
+app.controller('History2Ctrl', function($scope,  $location){
+    $scope.addInvest = function () {
+        $location.path("/app/history/addinvest");
+    };
+});
 app.controller('AddInvestCtrl', function($scope,  $location){
 
 });

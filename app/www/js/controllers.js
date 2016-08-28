@@ -61,8 +61,22 @@ app.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
     };
 })
 
-app.controller("ChatCtrl", function($scope){
-
+app.controller("ChatCtrl", function($scope, $timeout, $ionicScrollDelegate){
+    $scope.inputText = "";
+    $scope.canShowMe = false;
+    $scope.canShowHim = false;
+    $timeout(function() {
+        $ionicScrollDelegate.scrollBottom();
+    }, 100);
+    $scope.sendMsg = function() {
+        $scope.inputText = "";
+        $scope.canShowMe = true;
+        $ionicScrollDelegate.scrollBottom();
+        $timeout(function(){
+            $scope.canShowHim = true;
+            $ionicScrollDelegate.scrollBottom();
+        }, 5000);
+    }
 });
 
 app.controller('AulaCtrl', function($scope, $stateParams) {

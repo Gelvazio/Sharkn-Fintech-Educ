@@ -478,6 +478,13 @@ p.progress-indicator{
     line-height: 1.5;
 }
 
+.message-him.super-smiley {
+    font-size: 36px;
+    width: 18%;
+    padding: 0px;
+    text-align: center;
+}
+
 .message-him:after{
     content: ' ';
     position: absolute;

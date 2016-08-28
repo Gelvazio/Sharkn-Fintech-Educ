@@ -107,6 +107,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
         color: "orange"
     });
 
+    $stateProvider.state('app.history', {
+        url: '/history',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/history.html',
+                controller: 'HistoryCtrl'
+            }
+        },
+        color: "red"
+    });
+
     $stateProvider.state('app.forumexem', {
         url: '/forumexem',
         views: {

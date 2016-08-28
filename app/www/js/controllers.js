@@ -97,8 +97,14 @@ app.controller('CoursesCtrl', function($scope, $stateParams) {});
 
 app.controller('ForumexemCtrl', function($scope, $stateParams) {});
 
-app.controller('HistoryCtrl', function($scope){
-    
+app.controller('HistoryCtrl', function($scope,  $location){
+    $scope.addInvest = function () {
+        $location.path("/app/history/addinvest");
+    };
+});
+
+app.controller('AddInvestCtrl', function($scope,  $location){
+
 });
 
 app.controller("DashCtrl", function($scope){

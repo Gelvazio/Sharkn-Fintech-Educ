@@ -85,6 +85,8 @@ app.controller('AulaCtrl', function($scope, $stateParams) {
 
 app.controller('ForumCtrl', function($scope, $stateParams) {});
 
+app.controller('CoursesCtrl', function($scope, $stateParams) {});
+
 app.controller('ForumexemCtrl', function($scope, $stateParams) {});
 
 app.controller('HistoryCtrl', function($scope){
